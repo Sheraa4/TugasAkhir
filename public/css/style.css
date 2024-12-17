@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.hero {
+    margin-top: 78px;
+    background-color: #FDFAD9;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn-shop {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tops {
+    padding-top: 80px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.product-card .card-body{
+    text-align: left;
+   margin-left: 3px;  
+}
+
+.product-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+}
+
+/* .product-card .price {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+} */
+
+.product-card .fav-icon {
+    color: red;
+    padding-right: 3px;
+}
+
+.detail {
+    padding-top: 80px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.color-option.active {
+    border: 2px solid black;
+}
+
+/* Tambahkan margin antara bagian "Eleganna Boutique" dan "Layanan" */
+.footer .col-lg-2:nth-child(2) {
+    margin-right: 40px; /* Tambahkan jarak di sini (misalnya 40px) */
+}
+
+.footer .col-lg-2:nth-child(3) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.footer .col-lg-2:nth-child(4) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.footer .col-lg-2:nth-child(5) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.store-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.store-image img {
+    width: 1200px;
+}
+
+.store-image-1 img {
+    width: 800px;
+    margin-left: 150px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgba(253, 245, 230, 0);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+.subheadline {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn-shop {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.about {
+    padding-top: 80px;
+}
+
+/* Wrapper for flex layout of card and text */
+.card-wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Card section on the left */
+.card__left {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+/* Hover effect text data */
+.card__data {
+    width: 280px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description {
+    display: block;
+    font-size: .875rem;
+    margin-bottom: .25rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 15%);
+    margin-bottom: .75rem;
+}
+
+.card__button {
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 500;
+    color: hsl(82, 60%, 28%);
+}
+
+.card__button:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect for showing text data */
+.card_left:hover .card_data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__left:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__left:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card_left:not(:hover) .card_data {
+    animation: remove-data 1s forwards;
+}
+
+/* Card animation keyframes */
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* Styling the right part of the card */
+.card__right {
+    flex: 2;
+    padding-left: 1rem;
+    color: hsl(0, 0%, 35%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+}
+
+/* Headings styling */
+.card__right h1 {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 15%);
+}
+
+.card__right li {
+    font-size: 1.4rem;
+    margin-top: .75rem;
+    color: hsl(0, 0%, 15%);
+}
+
+.card__right p {
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__right {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+.header {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+  .header__title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
